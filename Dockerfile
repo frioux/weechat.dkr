@@ -5,6 +5,7 @@ ADD ./run-weechat /usr/local/bin/run-weechat
 RUN apk add --update \
         py-pip \
         s6 \
+        tzdata \
         weechat \
         weechat-aspell \
         weechat-dev \
