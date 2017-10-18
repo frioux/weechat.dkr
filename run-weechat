@@ -1,0 +1,5 @@
+#!/bin/sh
+
+chown $WEE_USER /.weechat
+
+exec s6-applyuidgid -u $WEE_USER weechat

@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.6
 
 ADD ./run-weechat /usr/local/bin/run-weechat
 
@@ -9,7 +9,6 @@ RUN apk add --update \
         weechat \
         weechat-aspell \
         weechat-dev \
-        weechat-doc \
         weechat-lua \
         weechat-perl \
         weechat-python \
