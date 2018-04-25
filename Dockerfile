@@ -1,9 +1,9 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
 ADD ./run-weechat /usr/local/bin/run-weechat
 
 RUN apk add --update \
-        py-pip \
+        py2-pip \
         s6 \
         tzdata \
         weechat \
