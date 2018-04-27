@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+set -x
+
+cd /tmp
+echo "4bea8c0c4467b81e2241d68e5c6425274f0fe15d853ddac46ddf3cce481e03549660d6083277719d462ec5d0dea4b31d89f6b3f51f92f12908213232d2d807df  weechat-2.1.tar.xz" > sum.txt
+wget -q https://weechat.org/files/src/weechat-2.1.tar.xz
+sha512sum -c sum.txt
+tar xvf weechat-2.1.tar.xz
+cd weechat-2.1
+mkdir build
+cd build
+cmake ..
+make
+make install
+cd /
+rm /tmp/weechat* -rf
