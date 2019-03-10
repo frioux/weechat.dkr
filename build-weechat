@@ -4,11 +4,11 @@ set -e
 set -x
 
 cd /tmp
-echo "4bea8c0c4467b81e2241d68e5c6425274f0fe15d853ddac46ddf3cce481e03549660d6083277719d462ec5d0dea4b31d89f6b3f51f92f12908213232d2d807df  weechat-2.1.tar.xz" > sum.txt
-wget -q https://weechat.org/files/src/weechat-2.1.tar.xz
+echo "012eca03e56eea64b3e50ee1e8b7c1cc636ad779be01268b3c9ee05e3bd149bc58b09eb6952e965061782da5f9d33d7a835056c6bb43c1fdca998cfc463fd068  weechat-2.4.tar.xz" > sum.txt
+wget -q https://weechat.org/files/src/weechat-2.4.tar.xz
 sha512sum -c sum.txt
-tar xvf weechat-2.1.tar.xz
-cd weechat-2.1
+tar xvf weechat-2.4.tar.xz
+cd weechat-2.4
 mkdir build
 cd build
 cmake ..

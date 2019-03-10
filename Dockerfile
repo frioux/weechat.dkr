@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.9
 
 ADD ./run-weechat /usr/local/bin/run-weechat
 ADD ./build-weechat /usr/local/bin/build-weechat
